@@ -1,4 +1,42 @@
 @import "tailwindcss";
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+  name: "morva";
+  default: true;
+  prefersdark: true;
+  color-scheme: "dark";
+  --color-base-100: #0A192F;
+  --color-base-200: #112240;
+  --color-base-300: #1A2B3C;
+  --color-base-content: #FFFFFF;
+  --color-primary: #19D1E6;
+  --color-primary-content: #0A192F;
+  --color-secondary: #14B8A6;
+  --color-secondary-content: #1A2B3C;
+  --color-accent: #FF7F50;
+  --color-accent-content: oklch(26% 0.079 36.259);
+  --color-neutral: #1A2B3C;
+  --color-neutral-content: #FFFFFF;
+  --color-info: #0EA5E9;
+  --color-info-content: oklch(14% 0 0);
+  --color-success: #22C55E;
+  --color-success-content: oklch(26% 0.065 152.934);
+  --color-warning: #FACC15;
+  --color-warning-content: #1A2B3C;
+  --color-error: #EF4444;
+  --color-error-content: oklch(27% 0.105 12.094);
+  --radius-selector: 0.5rem;
+  --radius-field: 0.5rem;
+  --radius-box: 0.5rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.1875rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+
 
 body {
   font-family: var(--font-vazir), sans-serif;
