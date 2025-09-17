@@ -15,40 +15,40 @@ export default function Header() {
             className="p-2 mt-3 shadow menu menu-sm dropdown-content bg-base-100 rounded-box z-1 w-52"
           >
             <li>
-            <Link href="/services" className="font-thin">
-              خدمات
-            </Link>
-          </li>
-          <li>
-            <Link href="/packages" className="font-thin">
-              پکیج ها
-            </Link>
-          </li>
-          <li>
-            <Link href="/about" className="font-thin">
-              درباره ما
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact" className="font-thin">
-              تماس با ما
-            </Link>
-          </li>
-          <li>
-            <Link href="/news" className="font-thin">
-              اخبار و رویدادها
-            </Link>
-          </li>
+              <Link href="/services" className="font-thin">
+                خدمات
+              </Link>
+            </li>
+            <li>
+              <Link href="/packages" className="font-thin">
+                پکیج ها
+              </Link>
+            </li>
+            <li>
+              <Link href="/about" className="font-thin">
+                درباره ما
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" className="font-thin">
+                تماس با ما
+              </Link>
+            </li>
+            <li>
+              <Link href="/news" className="font-thin">
+                اخبار و رویدادها
+              </Link>
+            </li>
           </ul>
         </div>
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex items-center gap-2">
           <Image
             src="/images/Morva.PNG"
-            width={60}
-            height={60}
+            width={40}
+            height={40}
             alt="Morva-icon"
           />
-        <h1 className="font-bold">مروا</h1>
+          <h1 className="font-bold">مروا</h1>
         </Link>
       </div>
       <nav className="hidden navbar-center lg:flex">
@@ -81,8 +81,12 @@ export default function Header() {
         </ul>
       </nav>
       <div className="space-x-4 navbar-end">
-        <Link href="/login" className="rounded-lg btn btn-primary btn-sm">ثبت نام</Link>
-        <Link href="/login" className="rounded-lg btn btn-outline btn-sm">ورود</Link>
+        <Link href="/login" className="rounded-lg btn btn-primary btn-sm">
+          ثبت نام
+        </Link>
+        <Link href="/login" className="rounded-lg btn btn-outline btn-sm">
+          ورود
+        </Link>
       </div>
     </header>
   );
