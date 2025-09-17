@@ -3,7 +3,7 @@ export default function Hero() {
     <div
       className="hero md:container md:mx-auto rounded-2xl"
       style={{
-        backgroundImage: "url('/imgs/Hero-bg.png')",
+        backgroundImage: "url('/images/Hero-bg.png')",
         height: "70vh",
       }}
     >
