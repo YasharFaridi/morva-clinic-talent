@@ -36,7 +36,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-col items-center w-full md:w-1/4 gap-2 p-4">
+          <div className="flex flex-col items-center w-full lg:w-1/4 gap-2 p-4">
             <input
               type="text"
               placeholder="نام"

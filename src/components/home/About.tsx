@@ -9,7 +9,7 @@ export default function About() {
       <div className="size-full rounded-2xl bg-gradient-to-tr from-[#005784] to-[#052A3D] opacity-75"></div>
       <div className="hero-content flex flex-col">
         <h1 className="font-bold md:text-3xl text-2xl">درباره مروا</h1>
-        <div className="flex flex-col-reverse lg:flex-row gap-24 items-center">
+        <div className="flex flex-col-reverse lg:flex-row lg:gap-36 items-center">
           <p className="font-bold text-center lg:text-right md:text-2xl text-md my-8 ">
             موسسه مروا با تکیه بر تیمی متخصص و متعهد، فعالیت خود را در حوزه‌های
             مدیریت، روانشناسی، علوم ورزشی و استعدادیابی آغاز کرده است و در

@@ -84,7 +84,7 @@ export default function Header() {
         <Link href="/login" className="rounded-lg btn btn-primary btn-sm">
           ثبت نام
         </Link>
-        <Link href="/login" className="rounded-lg btn btn-outline btn-sm">
+        <Link href="/login" className="rounded-lg btn btn-outline btn-sm hover:btn-primary">
           ورود
         </Link>
       </div>
