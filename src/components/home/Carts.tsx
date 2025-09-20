@@ -9,10 +9,10 @@ export default function Carts() {
       img: "/images/Morva-children.png",
     },
     {
-      title: "مروا کودک",
-      desc: "شکوفایی استعداد کودک دلبندتان را به ما بسپارید برای آینده تحصیلی، کاری، ورزشی و آینده ای درخشان",
-      age: "6-12",
-      img: "/images/Morva-children.png",
+      title: "مروا بزرگسال",
+      desc: "شکوفایی استعداد های خود را به مروا و تیم تخصصی مروا بسپارید و آینده شغلی رو رقم بزنید و بدرخشید",
+      age: "20-30",
+      img: "/images/Morva-adults.jpg",
     },
   ];
   return (
