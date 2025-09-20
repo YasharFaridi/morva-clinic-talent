@@ -1,25 +1,17 @@
 import type { Metadata } from "next";
 import { vazir } from "./fonts";
 import "./globals.css";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "مروا - مدیریت رشد و استعداد",
-  description: "مروا وب سایت استعدادیابی",
+  title: "مروا",
+  description: "مروا وب سایت...",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html  lang="fa" dir="rtl">
+    <html lang="fa" dir="rtl">
       <body className={`${vazir.variable} antialiased`}>
-        <Header/>
-        <main className="min-h-screen">{children}</main>
-        <Footer/>
+        {children}
       </body>
     </html>
   );
