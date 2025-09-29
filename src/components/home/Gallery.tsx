@@ -72,7 +72,7 @@ export default function Gallery() {
   }
 
   return (
-    <div className="flex flex-col items-center gap-6 p-4 bg-base-200">
+    <div className="flex flex-col items-center gap-6 p-4">
       <h1 className="text-3xl font-bold">گالری فعالیت ها</h1>
 
       <div className="grid w-full max-w-6xl grid-cols-6 gap-4 auto-rows-auto">
