@@ -22,7 +22,6 @@ export default function Step2() {
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* نام پدر */}
         <div className="form-control relative">
           <label className="label text-white">نام پدر</label>
           <div className="relative">
@@ -38,7 +37,6 @@ export default function Step2() {
           )}
         </div>
 
-        {/* نام مدرسه */}
         <div className="form-control relative">
           <label className="label text-white">نام مدرسه</label>
           <div className="relative">
@@ -54,7 +52,6 @@ export default function Step2() {
           )}
         </div>
 
-        {/* زبان مادری */}
         <div className="form-control relative">
           <label className="label text-white">زبان مادری</label>
           <div className="relative">
@@ -70,7 +67,6 @@ export default function Step2() {
           )}
         </div>
 
-        {/* زبان دوم */}
         <div className="form-control relative">
           <label className="label text-white">زبان دوم</label>
           <div className="relative">
@@ -86,7 +82,6 @@ export default function Step2() {
           )}
         </div>
 
-        {/* تحصیلات */}
         <div className="form-control relative">
           <label className="label text-white">تحصیلات</label>
           <div className="relative">
@@ -102,7 +97,6 @@ export default function Step2() {
           )}
         </div>
 
-        {/* آدرس */}
         <div className="form-control relative">
           <label className="label text-white">آدرس</label>
           <div className="relative">

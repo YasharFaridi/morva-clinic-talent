@@ -45,12 +45,10 @@ const fieldLabels: Record<
 export default function ReviewStep({ formData }: ReviewStepProps) {
   return (
     <div className="space-y-6">
-      {/* عنوان مرحله */}
       <h2 className="text-2xl font-bold text-primary flex items-center gap-2">
         <FaCheckCircle /> مرور اطلاعات
       </h2>
 
-      {/* کارت‌های اطلاعات */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {Object.entries(formData).map(([key, value]) => {
           const field = fieldLabels[key as keyof IUserFormData];

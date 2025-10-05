@@ -82,26 +82,21 @@ export default function SignupPage() {
   <div
     className="min-h-screen w-full flex items-center justify-center relative overflow-hidden bg-[url('/images/Form-bg.png')] bg-repeat bg-[length:256px_256px] bg-center"
   >
-    {/* لایه گرادیان تاریک برای کنتراست */}
     <div className="absolute inset-0 bg-gradient-to-br from-[#020617]/90 via-[#0f172a]/80 to-[#020617]/90" />
 
-    {/* افکت نور مرکزی */}
     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-cyan-500/20 blur-[160px] rounded-full" />
 
-    {/* فرم */}
     <div className="relative z-10 w-full max-w-3xl p-10 rounded-2xl border border-cyan-500/30 shadow-2xl bg-white/10 backdrop-blur-sm">
       <FormProvider {...methods}>
         <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
           {/* ProgressBar */}
           <ProgressBar step={step} totalSteps={totalSteps} />
 
-          {/* مراحل فرم */}
           {step === 1 && <Step1 />}
           {step === 2 && <Step2 />}
           {step === 3 && <Step3 />}
           {step === 4 && <ReviewStep formData={getValues()} />}
 
-          {/* دکمه‌ها */}
           <div className="flex justify-between items-center mt-8">
             {step > 1 && (
               <button
@@ -132,12 +127,11 @@ export default function SignupPage() {
             )}
           </div>
 
-          {/* پیام‌ها */}
           {errorMessage && (
-            <p className="text-red-400 text-center mt-4">{errorMessage}</p>
+            <p className="text-error text-center mt-4">{errorMessage}</p>
           )}
           {successMessage && (
-            <p className="text-green-400 text-center mt-4">
+            <p className="text-success text-center mt-4">
               {successMessage}
             </p>
           )}

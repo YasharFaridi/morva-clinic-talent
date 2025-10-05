@@ -81,10 +81,13 @@ export default function Header() {
         </ul>
       </nav>
       <div className="space-x-4 navbar-end">
-        <Link href="/login" className="rounded-lg btn btn-primary btn-sm">
+        <Link href="/signup" className="rounded-lg btn btn-primary btn-sm">
           ثبت نام
         </Link>
-        <Link href="/login" className="rounded-lg btn btn-outline btn-sm hover:btn-primary">
+        <Link
+          href="/login"
+          className="rounded-lg btn btn-outline btn-sm hover:btn-primary"
+        >
           ورود
         </Link>
       </div>

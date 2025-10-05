@@ -21,7 +21,6 @@ export default function Step1() {
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* کد ملی */}
         <div className="form-control relative">
           <label className="label text-white">کد ملی</label>
           <div className="relative">
@@ -37,7 +36,6 @@ export default function Step1() {
           )}
         </div>
 
-        {/* ایمیل */}
         <div className="form-control relative">
           <label className="label text-white">ایمیل</label>
           <div className="relative">
@@ -52,7 +50,6 @@ export default function Step1() {
           {errors.email && <p className="text-error">{errors.email.message}</p>}
         </div>
 
-        {/* نام */}
         <div className="form-control relative">
           <label className="label text-white">نام</label>
           <div className="relative">
@@ -68,7 +65,6 @@ export default function Step1() {
           )}
         </div>
 
-        {/* نام خانوادگی */}
         <div className="form-control relative">
           <label className="label text-white">نام خانوادگی</label>
           <div className="relative">
@@ -84,7 +80,6 @@ export default function Step1() {
           )}
         </div>
 
-        {/* شماره موبایل */}
         <div className="form-control relative">
           <label className="label text-white">شماره موبایل</label>
           <div className="relative">
@@ -100,7 +95,6 @@ export default function Step1() {
           )}
         </div>
 
-        {/* جنسیت */}
         <div className="form-control">
           <label className="label text-white flex items-center gap-2">
             <FaVenusMars className="text-primary" /> جنسیت

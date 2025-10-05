@@ -15,7 +15,6 @@ export default function Step3() {
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* رمز عبور */}
         <div className="form-control relative">
           <label className="label text-white">رمز عبور</label>
           <div className="relative">
@@ -32,7 +31,6 @@ export default function Step3() {
           )}
         </div>
 
-        {/* تکرار رمز عبور */}
         <div className="form-control relative">
           <label className="label text-white">تکرار رمز عبور</label>
           <div className="relative">
