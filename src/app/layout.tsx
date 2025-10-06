@@ -3,8 +3,11 @@ import { vazir } from "./fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "مروا",
-  description: "مروا وب سایت...",
+  title: "مروا | مدیریت و رشد استعداد",
+  description: "سایت استعدیابی مروا مدیریت و رشد استعداد",
+  icons:{
+    icon:'/favicon.ico'
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
