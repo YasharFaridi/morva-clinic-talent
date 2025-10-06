@@ -8,7 +8,7 @@ import axios, {
 import Cookies from "js-cookie";
 
 const apiClient: AxiosInstance = axios.create({
-  baseURL: "https://morva.onrender.com/api",
+  baseURL: process.env.NEXT_PUBLIC_API_URL + "/api",
   headers: {
     "Content-Type": "application/json",
   },
