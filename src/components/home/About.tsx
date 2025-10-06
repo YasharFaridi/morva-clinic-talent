@@ -98,7 +98,7 @@ export default function About() {
               </p>
             </div>
             <Image
-              src="/images/Morva.png"
+              src="/images/Morva-logo.png"
               width={350}
               height={350}
               alt="Morva"

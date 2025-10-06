@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function Permissions() {
   const permissions = [
-    { src: "/images/morva.png", title: "مجوز ۱" },
-    { src: "/images/morva.png", title: "مجوز ۲" },
-    { src: "/images/morva.png", title: "مجوز ۳" },
+    { src: "/images/Morva-logo.png", title: "مجوز ۱" },
+    { src: "/images/Morva-logo.png", title: "مجوز ۲" },
+    { src: "/images/Morva-logo.png", title: "مجوز ۳" },
   ];
 
   return (

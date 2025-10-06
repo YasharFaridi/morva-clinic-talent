@@ -43,7 +43,7 @@ export default function Header() {
         </div>
         <Link href="/" className="flex items-center gap-2">
           <Image
-            src="/images/Morva.png"
+            src="/images/Morva-logo.png"
             width={40}
             height={40}
             alt="Morva-icon"
