@@ -1,27 +1,26 @@
 @plugin "daisyui/theme" {
   name: "morva-kids";
   default: false;
-  prefersdark: true;
-  color-scheme: "dark";
+  prefersdark: false;
+  color-scheme: "light";
 
-  --color-base-100: #052a3d;
-  --color-base-200: #112240;
-  --color-base-300: #1a2b3c;
-  --color-base-content: #f6f8ff;
+  --color-base-100: #a0e9ff;
+  --color-base-200: #ffc1e3;
+  --color-base-300: #fff3b0;
+  --color-base-content: #052a3d;
 
-  --color-primary: #b3e5fc;
-  --color-primary-content: #06202f;
-
-  --color-secondary: #ffd6e8;
-  --color-secondary-content: #3b1d2b;
+  --color-primary: #00bfff;
+  --color-primary-content: #052a3d;
+  --color-secondary: #ff69b4;
+  --color-secondary-content: #052a3d;
 
   --color-accent: #c8facc;
-  --color-accent-content: #0f2413;
+  --color-accent-content: #052a3d;
 
-  --color-neutral: #263648;
-  --color-neutral-content: #e5f1f7;
+  --color-neutral: #f0f4f8;
+  --color-neutral-content: #052a3d;
 
-  --color-info: #b5d8ff;
+  --color-info: #64c8f0;
   --color-success: #baf7bf;
   --color-warning: #fff3b0;
   --color-error: #ffbdbd;
