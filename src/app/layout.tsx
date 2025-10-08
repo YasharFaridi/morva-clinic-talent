@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { vazir } from "./fonts";
-import "./globals.css";
+import "@/themes/global.css";
 
 export const metadata: Metadata = {
   title: "مروا | مدیریت و رشد استعداد",
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="fa" dir="rtl">
+    <html lang="fa" dir="rtl" data-theme='morva-default'>
       <body className={`${vazir.variable} antialiased`}>
         {children}
       </body>

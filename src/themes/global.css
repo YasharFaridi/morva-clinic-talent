@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@import "./morva-default.css";
+@import "./morva-kinds.css";
+
+body {
+  font-family: var(--font-vazir), sans-serif;
+}
