@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Carts() {
   const carts = [
@@ -7,12 +8,14 @@ export default function Carts() {
       desc: "شکوفایی استعداد کودک دلبندتان را به ما بسپارید برای آینده تحصیلی، کاری، ورزشی و آینده ای درخشان",
       age: "6-12",
       img: "/images/Morva-children.png",
+      page:'/morva-kids'
     },
     {
       title: "مروا بزرگسال",
       desc: "شکوفایی استعداد های خود را به مروا و تیم تخصصی مروا بسپارید و آینده شغلی رو رقم بزنید و بدرخشید",
       age: "20-30",
       img: "/images/Morva-adults.jpg",
+      page:'/morva-adults'
     },
   ];
   return (
@@ -38,9 +41,11 @@ export default function Carts() {
               <p className="mb-4">{cart.desc}</p>
             </div>
             <div className="justify-end card-actions">
-              <button className="btn btn-accent rounded-xl">
-                ثبت نام و اطلاعات بیشتر
-              </button>
+              <Link href={cart.page}>
+                <button className="btn btn-accent rounded-xl">
+                  ثبت نام و اطلاعات بیشتر
+                </button>
+              </Link>
             </div>
           </div>
         </div>
