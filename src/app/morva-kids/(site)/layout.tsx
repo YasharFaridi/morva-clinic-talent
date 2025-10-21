@@ -1,4 +1,4 @@
-import Header from "@/components/layout/Header";
+import KidsHeader from "../components/KidsHeader";
 
 export default function MorvaKidsLayout({
   children,
@@ -7,7 +7,7 @@ export default function MorvaKidsLayout({
 }) {
   return (
     <div data-theme="morva-kids">
-      <Header />
+      <KidsHeader />
       <main className="min-h-screen">{children}</main>
       {/* <Footer /> */}
     </div>

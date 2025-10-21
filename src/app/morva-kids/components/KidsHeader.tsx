@@ -2,7 +2,7 @@ import { FaBarsStaggered } from "react-icons/fa6";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Header() {
+export default function KidsHeader() {
   return (
     <header className="container mx-auto navbar text-primary">
       <div className="navbar-start">
@@ -48,10 +48,10 @@ export default function Header() {
             height={40}
             alt="Morva-icon"
           />
-          <h1 className="font-bold">مروا</h1>
+          <h1 className="font-bold">مروا کودک</h1>
         </Link>
       </div>
-      <nav className="hidden navbar-end lg:flex">
+      <nav className="hidden navbar-center lg:flex">
         <ul className="px-1 menu menu-horizontal">
           <li>
             <Link href="/services" className="font-thin">
@@ -80,8 +80,11 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-      {/* <div className="space-x-4 navbar-end">
-        <Link href="/signup" className="rounded-lg btn btn-primary btn-sm">
+      <div className="space-x-4 navbar-end">
+        <Link
+          href="/morva-kids/signin"
+          className="rounded-lg btn btn-primary btn-sm"
+        >
           ثبت نام
         </Link>
         <Link
@@ -90,7 +93,7 @@ export default function Header() {
         >
           ورود
         </Link>
-      </div> */}
+      </div>
     </header>
   );
 }

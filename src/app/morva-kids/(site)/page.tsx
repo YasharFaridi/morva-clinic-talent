@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect } from "react";
-import MorvaKidsBanner from "@/components/morva-kids/MorvaKidsBanner";
+import KidsBanner from "@/app/morva-kids/components/KidsBanner";
+import KidsPackages from "../components/KidsPackages";
 
 export default function MorvaKidsPage() {
   useEffect(() => {
@@ -9,7 +10,8 @@ export default function MorvaKidsPage() {
 
   return (
     <>
-      <MorvaKidsBanner />
+      <KidsBanner />
+      <KidsPackages />
     </>
   );
 }
