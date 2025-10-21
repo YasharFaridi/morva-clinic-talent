@@ -17,13 +17,20 @@ export default function Carts() {
       img: "/images/Morva-adults.jpg",
       page:'/morva-adults'
     },
+    {
+      title: "مروا نوجوان",
+      desc: "نوجوانان آینده این مرز و بوم هستن مروا کمک به شکوفایی آنها و آیندشان خواهد کرد",
+      age: "20-30",
+      img: "/images/Morva-teen.jpg",
+      page:'/morva-teen'
+    },
   ];
   return (
-    <div className="container flex flex-col justify-around gap-8 mx-auto my-16 md:flex-row">
+    <div className="container flex flex-col justify-around items-center gap-8 mx-auto my-16 lg:flex-row">
       {carts.map((cart, index) => (
         <div
           key={index}
-          className="grid max-w-lg p-2 border-2 shadow-sm card bg-primary/10 md:grid-cols-2"
+          className="grid max-w-lg p-2 border-2 shadow-sm card bg-primary/10 md:grid-cols-2 w-96 lg:h-64"
         >
           <figure className="flex items-center justify-center">
             <Image
@@ -42,7 +49,7 @@ export default function Carts() {
             </div>
             <div className="justify-end card-actions">
               <Link href={cart.page}>
-                <button className="btn btn-accent rounded-xl">
+                <button className="btn btn-accent rounded-xl text-xs text-nowrap">
                   ثبت نام و اطلاعات بیشتر
                 </button>
               </Link>
