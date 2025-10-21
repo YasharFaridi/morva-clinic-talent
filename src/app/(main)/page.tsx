@@ -1,3 +1,7 @@
+"use client";
+
+import { useRef } from "react";
+
 import About from "@/components/home/About";
 import Articles from "@/components/home/Articles";
 import Carts from "@/components/home/Carts";
@@ -8,16 +12,24 @@ import Permissions from "@/components/home/Permissions";
 import Services from "@/components/home/Services";
 
 export default function Home() {
+  const cartsRef = useRef<HTMLDivElement | null>(null);
+
+  const handleScrollToCarts = () => {
+    cartsRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
-    <Hero/>
-    <Services/>
-    <Carts/>
-    <About/>
-    <Articles/>
-    <Courses/>
-    <Gallery/>
-    <Permissions/>
+      <Hero onStartClick={handleScrollToCarts} />
+      <Services />
+      <div ref={cartsRef}>
+        <Carts />
+      </div>
+      <About />
+      <Articles />
+      <Courses />
+      <Gallery />
+      <Permissions />
     </>
-  )
+  );
 }

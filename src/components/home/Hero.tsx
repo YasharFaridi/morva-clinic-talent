@@ -1,4 +1,8 @@
-export default function Hero() {
+type HeroProps = {
+  onStartClick: () => void;
+};
+
+export default function Hero({ onStartClick }: HeroProps) {
   return (
     <div
       className="hero md:container md:mx-auto rounded-2xl"
@@ -14,7 +18,9 @@ export default function Hero() {
           مروا ساختن آینده ای درخشان برای شما چرا که شکوفایی استعداد ها آینده
           روشن را به ارمقان می آورد
         </p>
-        <button className="btn btn-primary rounded-2xl">شروع کنید</button>
+        <button className="btn btn-primary rounded-2xl" onClick={onStartClick}>
+          شروع کنید
+        </button>
       </div>
     </div>
   );
