@@ -22,7 +22,7 @@ export default function Home() {
     <>
       <Hero onStartClick={handleScrollToCarts} />
       <Services />
-      <div ref={cartsRef}>
+      <div className="scroll-mt-0 lg:scroll-mt-60 " ref={cartsRef}>
         <Carts />
       </div>
       <About />
