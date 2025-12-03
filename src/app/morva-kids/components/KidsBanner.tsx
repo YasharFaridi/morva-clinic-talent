@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { FaRocket, FaCloud, FaSmileBeam, FaLightbulb } from "react-icons/fa";
 
 export default function KidsBanner() {
@@ -39,15 +40,17 @@ export default function KidsBanner() {
         ! 🚀
       </p>
 
-      <button
-        className="btn border-0 font-bold px-6 md:px-8 py-2 md:py-3 rounded-full shadow-lg flex items-center justify-center gap-2 text-[var(--color-base-content)]"
-        style={{
-          background: `linear-gradient(90deg, var(--color-base-100), var(--color-base-2 00), var(--color-base-300), var(--color-accent))`,
-        }}
-      >
-        <FaRocket className="text-[var(--color-base-content)] text-lg md:text-xl" />
-        شروع سفر استعدادها
-      </button>
+     <Link href='dashboard/kids-dashboard'>
+        <button
+          className="btn border-0 font-bold px-6 md:px-8 py-2 md:py-3 rounded-full shadow-lg flex items-center justify-center gap-2 text-[var(--color-base-content)]"
+          style={{
+            background: `linear-gradient(90deg, var(--color-base-100), var(--color-base-2 00), var(--color-base-300), var(--color-accent))`,
+          }}
+        >
+          <FaRocket className="text-[var(--color-base-content)] text-lg md:text-xl" />
+          نمایش داشبورد
+        </button>
+     </Link>
     </section>
   );
 }
