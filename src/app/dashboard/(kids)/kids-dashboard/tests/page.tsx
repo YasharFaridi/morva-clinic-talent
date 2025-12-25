@@ -74,7 +74,7 @@ export default function KidsTestsPage() {
         {tests.map((test) => (
           <div
             key={test.id}
-            className="card bg-base-300 shadow-md hover:shadow-xl transition rounded-3xl p-5 border border-base-200"
+            className="card bg-base-200 shadow-md hover:shadow-xl transition rounded-3xl p-5 border-2 border-base-300"
           >
             <div className="card-body">
               <h3 className="card-title text-primary">{test.name}</h3>
