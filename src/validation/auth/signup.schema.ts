@@ -2,11 +2,11 @@ import * as z from "zod";
 
 export const signupSchema = z
   .object({
-    national_code: z.string().min(10, "کد ملی باید ۱۰ رقم باشد"),
+    national_code: z.string().length(10, "کد ملی باید ۱۰ رقم باشد"),
     email: z.string().email("ایمیل معتبر وارد کنید"),
     first_name: z.string().min(1, "نام الزامی است"),
     last_name: z.string().min(1, "نام خانوادگی الزامی است"),
-    phone_number: z.string().min(11, "شماره موبایل معتبر نیست"),
+    phone_number: z.string().length(11, "شماره موبایل معتبر نیست"),
     sex: z.enum(["M", "F"]),
     parent_name: z.string().min(1, "نام پدر الزامی است"),
     school_name: z.string().min(1, "نام مدرسه الزامی است"),

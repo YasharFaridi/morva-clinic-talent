@@ -1,6 +1,6 @@
 export const API_ENDPOINTS = {
   auth: {
-    signup: "/signup",
+    signup: "/signup/",
   },
   tests: {
     list: "/tests", // requires ?tag=kids|teens|adults
