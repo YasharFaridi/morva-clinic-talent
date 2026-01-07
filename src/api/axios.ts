@@ -7,11 +7,10 @@ import axios, {
 } from "axios";
 import Cookies from "js-cookie";
 
-const DEFAULT_BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 const BASE_URL = "http://morvatalent.ir";
 
 const apiClient: AxiosInstance = axios.create({
-  baseURL: `${DEFAULT_BASE_URL || BASE_URL}/api`,
+  baseURL: `${BASE_URL}/api/`,
   headers: {
     "Content-Type": "application/json",
   },
